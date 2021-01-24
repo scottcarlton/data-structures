@@ -69,7 +69,7 @@ class HashTable {
 
 const table = new HashTable();
 
-table.set('scottcarlton', 'scottcarlton');
-table.set('deniseshaller', 'deniseshaller');
+table.set('tom@url.com', 'Tom Schuller');
+table.set('denise@url.com', 'Denise Muller');
 console.log(table.show());
-console.log(table.get('deniseshaller'));
+console.log(table.get('denise@url.com'));
