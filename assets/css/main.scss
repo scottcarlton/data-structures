@@ -1,0 +1,77 @@
+.item {
+ display: block;
+ margin: 0 auto;
+ height: 300px;
+ width: 300px;
+ border:  1ps solid black;
+ background: darksalmon;
+ font-size: 20px;
+ text-align: center;
+ line-height: 300px;
+}
+
+// .grid {
+//   display: grid;
+//   grid-template-columns: repeat(4, 100px);
+//   gap: 1px;
+// }
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(7, 100px);
+  gap: 1px;
+}
+
+.card {
+  position: relative;
+  width: 100px;
+  height: 100px;
+  background: red;
+}
+
+.card:after {
+  content: '';
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 100%;
+  background: gray;
+}
+
+.flip:after {
+  background: transparent;
+}
+
+
+.square {
+  position: relative;
+  width: 100px;
+  height: 100px;
+  background: red;
+}
+
+.cw {
+  padding: 1em;
+  margin-bottom: 1em;
+  background: chocolate;
+}
+
+.case {
+  padding: 1em;
+  background: white;
+  margin-top: 12px;
+}
+
+.case:first-child {
+  margin-top: 0;
+}
+
+.mv {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@import '_select';
